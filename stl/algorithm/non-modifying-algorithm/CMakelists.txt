@@ -1,0 +1,3 @@
+project (non-mutating-algorithm)
+  
+add_executable(${PROJECT_NAME} main.cpp)

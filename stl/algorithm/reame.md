@@ -22,6 +22,9 @@ A prediffened set of solutions to specifics problems
 		3.-algorithm will not cause a side effect on input sequence
 		4.-Function Object (Functors) may cause side effect by modifying itself, the input sequence (e.g for_each) or the sourrended code
 		List of non-modifying sequence
+
+		                                LIST OF FUNCTIONS
+
 			1.-all_of                      8.- adjacent_find
 			2.-any_of                      9.- count
 			3.-none_of                          count_if
@@ -34,7 +37,35 @@ A prediffened set of solutions to specifics problems
 
 	2.- mutating sequences operations (25.3)
 		1.-Do not modify input sequence except when output overlap input sequence (e.g transform)
+
 	3.- Sorting and related operations (25.4)
+		1.-Mix of non-modifying operations and mutating operations
+		2.-mutating operation modify sequences in place (std::make_heap, std::sort)
+			or emit an output to output sequence( std::merge, std::partial_sort_copy)
+		3.-Default compare operation
+
+		                                LIST OF FUNCTIONS
+
+			1.-SORT                                 6.-HEAP OPERATION
+				1.-stable_sort                         1.-push_heap
+				2.- partial_sort                       2.-pop_heap
+				3.- partial_sort_copy                  3.-make_heap
+			2.-NTH_ELEMENT                             4.-sort_heap
+			3.-BYNARY_SEARCH                        7.-MINIMUN AND MAXIMUM
+				1.-lowe_bound                          1.-min
+				2.-upper_bound                         2.-max
+				3.-equal_range                         3.-mim_element
+				4.-binary_seach                        4.-minmax_element
+			4.-MERGE                                8.-LEXICOGRAPHICAL COMPARASITIONS
+				1.- merge                              1.- lexicographical_compare
+				2.- inplace_merge                   9.-PERMUTATION GENERATOR
+			5.-SET OPERATION ON SORTED STRUCTURE       1.- next_permutation
+				1.- include                            2.- previous_permutation
+				2.- set_union
+				3.- set_intersection
+				4.- set_difference
+				5.- set_symetric_difference
+		
 	4.- General C algorithm (25.5)
 	5.- General numeric operations (25.6)
 
