@@ -18,7 +18,22 @@ A prediffened set of solutions to specifics problems
 3.-What do we have in STL ?
 	1.- Non modifying sequence operations (25.2)
 		1.-Do not modified input secuence
+		2.-Do not emit a result sequence
+		3.-algorithm will not cause a side effect on input sequence
+		4.-Function Object (Functors) may cause side effect by modifying itself, the input sequence (e.g for_each) or the sourrended code
+		List of non-modifying sequence
+			1.-all_of                      8.- adjacent_find
+			2.-any_of                      9.- count
+			3.-none_of                          count_if
+			4.-for_each                    10.-mismathc
+			5.-find                        11.-equal
+				find_if, find_if_not       12.-is_permutation
+			6.-find_end                    13.-search
+			7.-find_first_off                  search_n
+
+
 	2.- mutating sequences operations (25.3)
+		1.-Do not modify input sequence except when output overlap input sequence (e.g transform)
 	3.- Sorting and related operations (25.4)
 	4.- General C algorithm (25.5)
 	5.- General numeric operations (25.6)
