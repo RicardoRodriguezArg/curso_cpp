@@ -1,6 +1,6 @@
 /**
 STL Overview
-random access iterator
+special iterator
 */
 
 #include <iterator>

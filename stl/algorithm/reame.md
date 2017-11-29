@@ -21,6 +21,7 @@ A prediffened set of solutions to specifics problems
 		2.-Do not emit a result sequence
 		3.-algorithm will not cause a side effect on input sequence
 		4.-Function Object (Functors) may cause side effect by modifying itself, the input sequence (e.g for_each) or the sourrended code
+
 		List of non-modifying sequence
 
 		                                LIST OF FUNCTIONS
@@ -43,13 +44,16 @@ A prediffened set of solutions to specifics problems
 		2.-mutating operation modify sequences in place (std::make_heap, std::sort)
 			or emit an output to output sequence( std::merge, std::partial_sort_copy)
 		3.-Default compare operation
+		4.-Order of equivalent items are implement definned
+		5.-sort in place
 
 		                                LIST OF FUNCTIONS
 
 			1.-SORT                                 6.-HEAP OPERATION
-				1.-stable_sort                         1.-push_heap
+				1.- stable_sort                         1.-push_heap
 				2.- partial_sort                       2.-pop_heap
 				3.- partial_sort_copy                  3.-make_heap
+				4.- sort
 			2.-NTH_ELEMENT                             4.-sort_heap
 			3.-BYNARY_SEARCH                        7.-MINIMUN AND MAXIMUM
 				1.-lowe_bound                          1.-min
