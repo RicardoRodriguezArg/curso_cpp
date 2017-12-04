@@ -8,13 +8,14 @@ namespace QtCourse
 	{
 		Q_OBJECT
 	public:
-		MyClass();
+        MyClass(const std::string & ClassID);
     public slots:
 		void mySlot(int);
     signals:
         void valueChanged(int);
 	private:
         int myValue;
+        const std::string class_id;
 	};
 }
 #endif

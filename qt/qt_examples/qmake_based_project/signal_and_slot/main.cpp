@@ -12,7 +12,9 @@ int main(int argc, char **argv)
 {
 	QApplication app(argc, argv);//Entry Point
 
-
+	/**
+	QObject::connect ( const QObject * sender, const char * signal, const QObject * receiver, const char * method);
+	*/
 	//QObject Tree
     QWidget * root_window = new QWidget();//No Parent to this QObject
     
