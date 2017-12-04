@@ -13,12 +13,12 @@ find_package(Qt5Widgets)
 find_package(Qt5Core)
 
 # Tell CMake to create the helloworld executable
-#if (MSVC)
-#    add_executable(${PROJECT_NAME} WIN32 main.cpp)
-#endif (MSVC)
-#if (UNIX)
+if (MSVC)
+    add_executable(${PROJECT_NAME} WIN32 main.cpp)
+endif (MSVC)
+if (UNIX)
 	    add_executable(${PROJECT_NAME} main.cpp)
-#endif(UNIX)
+endif(UNIX)
 
 
 # Use the Widgets module from Qt 5.
