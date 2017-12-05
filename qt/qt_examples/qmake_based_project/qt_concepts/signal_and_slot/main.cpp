@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 
     QSpinBox * spinBox = new QSpinBox(root_window);
     //create signal/slot connections
+    //warning SIGNAL and slot must not contains argument name
     QObject::connect(slider, SIGNAL(valueChanged(int)),
     				spinBox, SLOT( setValue(int))
     	);
