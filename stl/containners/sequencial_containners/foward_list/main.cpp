@@ -3,16 +3,17 @@ STL Overview
 Foward List
 */
 
-#include <foward_list>
+
 #include <iterator>
 #include <iostream>
+#include <forward_list>
 #include <vector>
 int main()
 {
 	
 	
 	//default Constructor
-	std::foward_list<int> list;
+	std::forward_list<int> list;
 	//initialized list
 	
 

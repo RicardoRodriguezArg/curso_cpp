@@ -2,7 +2,8 @@
 STL Overview
 List
 */
-
+#include <algorithm>
+#include <string>
 #include <list>
 #include <iterator>
 #include <iostream>
@@ -14,7 +15,7 @@ int main()
 	//default Constructor
 	std::list<int> list;
 	//initialized list
-	std::list<int> list{1,2,3,4};
+	std::list<int> list_two{1,2,3,4};
 
 	//common method used
 	list.push_front(0); //{0,1,2,3,4};
@@ -28,7 +29,7 @@ int main()
 	}
 	//remove recently inserted value
 	//o(1)
-	list.remove(iterator);
+	list.remove(*iterator);
 	//list consume more memory than vector
 	//search is much more slower than vector search because of cache locallyti
 	//SPLICE

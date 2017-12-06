@@ -2,12 +2,12 @@
 STL Overview
 special iterator
 */
-
+#include <string>
 #include <iterator>
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <iterator>
+
 int main()
 {
 	//=======================================
@@ -31,12 +31,13 @@ int main()
 	//=======================================
 	//		Stream Iterator
 	//=======================================
-	std::vector<std::string> vector_four{"1","2","3","4","5"};
+	std::vector<std::string> vector_four{"1","2","3","4","5", "X"};
 	//this line show a defaulft constructor of istream iterator and it is used to represent end iterator
 	//std::istream<std::string>()
 	
 	//std::copy(std::istream_iterator<std::string>(std::cin), std::istream_iterator<std::string>(), std::back_inserter(vector_four));
 	std::cout<<"Stream Iterator"<<std::endl;
+	
 	std::copy(vector_four.begin(), vector_four.end(), std::ostream_iterator<std::string>(std::cout, " "));
 	std::cout<<"\n";
 	

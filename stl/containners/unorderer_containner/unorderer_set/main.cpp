@@ -24,7 +24,7 @@ int main()
 	{
 		std::cout<<*iterator<<std::endl;
 	}
-	//this method recreate the hash table, so elements change it position on the table
+	//this method recreate the hash table, so elements change it positions on the table
   	myset.rehash(12);
 	//insert operation take o(1)
 	myset.insert("Globant");
