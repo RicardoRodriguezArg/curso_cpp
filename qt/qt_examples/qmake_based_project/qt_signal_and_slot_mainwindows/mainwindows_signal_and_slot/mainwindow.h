@@ -14,9 +14,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+signals:
+    //just definned signal signature, not implement
+    void init();
+private slots:
+    void onInit();
 private:
-    //access to all widget to manage and modify
     Ui::MainWindow *ui;
 };
 
