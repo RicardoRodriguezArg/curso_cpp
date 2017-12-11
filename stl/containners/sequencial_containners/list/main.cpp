@@ -35,7 +35,7 @@ int main()
 	//SPLICE
 	std::list<int> listTwo{1,3,4,5,6,7};
 	//This operation take constant tiem o(1)
-	list.splice(std::end(list),listTwo,std::begin(list),std::end(list));
+	list.splice(std::end(list),listTwo,std::begin(listTwo),std::end(listTwo));
 
 
 	
